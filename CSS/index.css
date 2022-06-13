@@ -1,0 +1,262 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*reset выше-------------------------------------*/
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../Fonts/playfair-display-v29-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../Fonts/playfair-display-v29-latin-regular.eot?#iefix") format("embedded-opentype"), url("../Fonts/playfair-display-v29-latin-regular.woff2") format("woff2"), url("../Fonts/playfair-display-v29-latin-regular.woff") format("woff"), url("../Fonts/playfair-display-v29-latin-regular.ttf") format("truetype"), url("../Fonts/playfair-display-v29-latin-regular.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
+}
+
+/* playfair-display-700 - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../Fonts/playfair-display-v29-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../Fonts/playfair-display-v29-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair-display-v29-latin-700.woff2") format("woff2"), url("../Fonts/playfair-display-v29-latin-700.woff") format("woff"), url("../fonts/playfair-display-v29-latin-700.ttf") format("truetype"), url("../Fonts/playfair-display-v29-latin-700.svg#PlayfairDisplay") format("svg");
+  /* Legacy iOS */
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-size: 16px;
+  color: black;
+}
+
+/*header start*/
+.wrapper {
+  margin: 0 auto;
+  /*выравниваться по центру должно*/
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.wrapper .wrapper_header {
+  max-width: 1440px;
+  height: 146px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*чтобы текст друг на друга не влезал*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .root_menu {
+  margin-left: 60px;
+}
+
+.wrapper .header_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 20px;
+  font-size: 20px;
+  margin-right: 230px;
+}
+
+.wrapper .header_nav .nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper .header_nav #ul1 {
+  margin-right: 20px;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+.wrapper .header_nav #ul2 {
+  margin-right: 20px;
+}
+
+.wrapper .header_nav #ul3 {
+  margin-right: 20px;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+.wrapper .header_nav .a__nav__link {
+  margin-right: 50px;
+}
+
+.wrapper .header_nav .header_ssylki {
+  text-decoration: none;
+  /*этот селектор применять только для ссылок, ибо на других элементах не работает*/
+  color: black;
+}
+
+.wrapper .header_nav #homeColor {
+  color: #C08D5D;
+}
+
+.wrapper .GrapePicture {
+  margin-top: -100px;
+  margin-left: 850px;
+}
+
+/*end <header> content*/
+/*main content*/
+.mainContent {
+  display: block;
+}
+
+.mainContent .MainContent {
+  max-width: 1320px;
+  max-height: 634px;
+  margin-top: 40px;
+  margin-right: 80px;
+  margin-left: 80px;
+  background-color: #FFFAF3;
+}
+
+.mainContent .MainContent .MainContent__wrapper {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px;
+  line-height: 50px;
+}
+
+.mainContent .MainContent .first__MC__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.mainContent .MainContent #FoodText {
+  font-size: 50px;
+  font-weight: 700;
+  margin-left: -4px;
+}
+
+.mainContent .MainContent .special__line {
+  margin: 10px;
+  margin-left: -4px;
+}
+
+.mainContent .MainContent .second__Text {
+  font-size: 70px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: -4px;
+}
+
+.mainContent .MainContent .thrid__text {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  max-width: 535px;
+  line-height: 27px;
+}
+
+.mainContent .MainContent .ssylkaPicture {
+  background: url(../IMG/SVG/Golovolomka.svg) no-repeat;
+  margin-top: 100px;
+}
+
+.mainContent .MainContent .readSsylka {
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  border: #C08D5D 2px solid;
+  border-width: 12px;
+  background-color: #fdfdfd;
+  color: black;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.mainContent .footer__lastItem_anactive {
+  text-align: center;
+}
+
+/*end <main> content*/
+/*# sourceMappingURL=Main.css.map */
